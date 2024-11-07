@@ -9,9 +9,13 @@ categories: [CTF, Embedded Security]
 
 During Week 2 of the CSAW ESC 2024, I tackled the **KeyRing1** challenge, which involves determining which key is being 3D printed based on side-channel data from audio and vibration sensors. The goal is to classify 40 unlabeled samples into one of the known keys (**KeyA**, **KeyB**, **KeyC**, **KeyD**) using the collected side-channel information.
 
+![3D Printers](3dPrinters.jpg)
+
 ## Challenge Overview
 
 In this scenario, we gained physical access to **KeyCorp**, a key manufacturing facility. By embedding a microphone and vibration sensor near their 3D printers, we collected data on the printing processes. We also obtained labeled data for several known keys before leaving the site. Our task is to use this data to infer which key is currently being printed based on the remote sensor readings.
+
+![3DFactory](3dFactory.png)
 
 ## Approach
 
