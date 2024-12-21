@@ -27,9 +27,9 @@ I’ve developed tools and shared insights:
 
 ## Contact & Links
 
-- **[Root-Me Profile](https://root-me.org/)**
+- **[Root-Me Profile](https://www.root-me.org/sneaXOR)**
 - **[GitHub](https://github.com/sneaXOR)**
-- **[Email](mailto:souam.fadi.arab3@gmail.com)**
+- **[Email](mailto:fadi.arab3@gmail.com)**
 
 Feel free to reach out or check out my projects!
 
