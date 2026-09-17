@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fadi Arab - Applied AI Engineer and Founder">
+  <title>Fadi Arab - Resume</title>
+  <style>
+    :root {
+      --ink: #101828;
+      --muted: #667085;
+      --line: #d9e2e8;
+      --accent: #155e75;
+      --paper: #ffffff;
+      --soft: #f7f9fa;
+    }
+    * { box-sizing: border-box; }
+    html { background: #eef2f4; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: #eef2f4;
+      line-height: 1.42;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--accent); }
+    .page {
+      width: min(920px, calc(100% - 28px));
+      margin: 28px auto;
+      background: var(--paper);
+      border-top: 10px solid var(--accent);
+      box-shadow: 0 14px 40px rgba(16, 24, 40, .08);
+      padding: 48px 54px 42px;
+    }
+    header { margin-bottom: 26px; }
+    h1 {
+      margin: 0;
+      font-size: 40px;
+      line-height: 1;
+      letter-spacing: -1.2px;
+      font-weight: 760;
+    }
+    .role {
+      margin-top: 8px;
+      color: var(--accent);
+      font-size: 18px;
+      font-weight: 650;
+    }
+    .contact {
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 14px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .contact span:not(:last-child)::after { content: "  ·"; margin-left: 10px; }
+    section { margin-top: 24px; }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 760;
+      letter-spacing: .35px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .section-title::after {
+      content: "";
+      height: 1px;
+      background: var(--line);
+      flex: 1;
+    }
+    .job { margin-bottom: 18px; }
+    .job:last-child { margin-bottom: 0; }
+    .job-head {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: baseline;
+    }
+    .company {
+      font-size: 18px;
+      font-weight: 720;
+      letter-spacing: -.2px;
+    }
+    .date {
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    .title {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 1px;
+    }
+    ul {
+      margin: 8px 0 0 20px;
+      padding: 0;
+    }
+    li {
+      margin: 4px 0;
+      padding-left: 2px;
+      font-size: 14.2px;
+    }
+    .build { margin: 8px 0 11px; }
+    .build-name {
+      font-weight: 700;
+      font-size: 14.6px;
+    }
+    .build-desc {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 1px;
+    }
+    .bottom {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 30px;
+      background: var(--soft);
+      padding: 17px 20px;
+      margin-top: 8px;
+    }
+    .edu-item { margin-bottom: 10px; }
+    .edu-item:last-child { margin-bottom: 0; }
+    .edu-degree { font-weight: 700; font-size: 14px; }
+    .edu-meta { color: var(--muted); font-size: 13.5px; }
+    .skills { display: grid; grid-template-columns: auto 1fr; column-gap: 12px; row-gap: 5px; font-size: 13.5px; }
+    .skills strong { font-weight: 700; }
+    .print {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      background: var(--ink);
+      color: white;
+      border: 0;
+      border-radius: 999px;
+      padding: 11px 15px;
+      font: inherit;
+      font-size: 13px;
+      cursor: pointer;
+      box-shadow: 0 8px 28px rgba(16,24,40,.18);
+    }
+    @media (max-width: 680px) {
+      .page { width: 100%; margin: 0; box-shadow: none; padding: 32px 24px; }
+      h1 { font-size: 34px; }
+      .job-head { grid-template-columns: 1fr; gap: 0; }
+      .date { margin-top: 2px; }
+      .bottom { grid-template-columns: 1fr; gap: 18px; }
+      .print { display: none; }
+    }
+    @media print {
+      @page { size: A4; margin: 0; }
+      html, body { background: white; }
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        box-shadow: none;
+        padding: 11mm 13mm 9mm;
+        border-top-width: 3mm;
+      }
+      .print { display: none; }
+      h1 { font-size: 30px; }
+      .role { font-size: 15px; }
+      header { margin-bottom: 18px; }
+      section { margin-top: 16px; }
+      .job { margin-bottom: 12px; }
+      .company { font-size: 15px; }
+      li, .build-desc { font-size: 11.2px; }
+      .title, .date, .contact, .edu-meta, .skills { font-size: 10.8px; }
+      .build-name, .edu-degree { font-size: 11.2px; }
+      .bottom { padding: 12px 14px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Fadi Arab</h1>
+      <div class="role">Applied AI Engineer &amp; Founder</div>
+      <div class="contact">
+        <span>Toulouse, France</span>
+        <span><a href="https://www.linkedin.com/in/fadi-a-1294bb1b0/">LinkedIn</a></span>
+        <span><a href="https://github.com/sneaXOR">GitHub</a></span>
+        <span><a href="https://sneaxor.github.io/">Portfolio</a></span>
+      </div>
+    </header>
+
+    <section>
+      <div class="section-title">Experience</div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="company">Veltar</div>
+          <div class="date">2026</div>
+        </div>
+        <div class="title">Co-founder &amp; CTO</div>
+        <ul>
+          <li>Co-founded an AI product for export-control workflows in aerospace and built the first product from scratch.</li>
+          <li>Signed Airbus Robotics and Safran as early customers and led technical scoping, integrations and deployments in sensitive environments.</li>
+          <li>Owned the full loop across customer calls, product decisions, backend and agent systems, enterprise integrations and production fixes.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="company">Airbus</div>
+          <div class="date">2025 - Present</div>
+        </div>
+        <div class="title">Applied AI &amp; Security Engineer</div>
+        <ul>
+          <li>Build and deploy AI agents for cybersecurity workflows, from vulnerability research and triage to security review, compliance mapping and remediation.</li>
+          <li>Took agent workflows from prototype to production use across multiple engineering teams and worked directly with users on failure modes and iteration.</li>
+          <li>Built the systems around the agents too: tool integrations, orchestration, permissions, observability, evaluation and failure recovery inside Airbus infrastructure.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="company">CEA</div>
+          <div class="date">2023 - 2025</div>
+        </div>
+        <div class="title">R&amp;D Engineer - Embedded &amp; Industrial Systems</div>
+        <ul>
+          <li>Built an industrial digital twin with Schneider Electric so security and anomaly-detection work could be tested without touching production systems.</li>
+          <li>Built firmware-emulation and embedded-security test environments around QEMU, Unicorn and STM32 with instrumentation for low-level security research.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Selected work</div>
+      <div class="build">
+        <div class="build-name">Agent Drill - AI agent security testing</div>
+        <div class="build-desc">Built realistic security tests for tool-using agents connected to enterprise systems, including prompt-injection and authorization-boundary cases.</div>
+      </div>
+      <div class="build">
+        <div class="build-name">Arrows - AI threat-modeling agent</div>
+        <div class="build-desc">Built an agent that analyzes codebases and produces structured threat models for the SANS Institute AI Cybersecurity Hackathon.</div>
+      </div>
+      <div class="build">
+        <div class="build-name">FPGA cryptographic accelerator</div>
+        <div class="build-desc">Implemented the Serpent cipher in VHDL on a ZedBoard FPGA and controlled the accelerator from the ARM processor.</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Education &amp; core tools</div>
+      <div class="bottom">
+        <div>
+          <div class="edu-item">
+            <div class="edu-degree">MSc Cybersecurity &amp; Embedded Systems</div>
+            <div class="edu-meta">Université Bretagne Sud · 2023 - 2025</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-degree">BSc Computer Science</div>
+            <div class="edu-meta">University of Poitiers · 2019 - 2023</div>
+          </div>
+        </div>
+        <div class="skills">
+          <strong>AI / Software</strong><span>Python, LLM &amp; agent systems, evaluation, C, Rust</span>
+          <strong>Systems</strong><span>Linux, Docker, Kubernetes, CI/CD</span>
+          <strong>Embedded</strong><span>STM32, FPGA/VHDL, CAN, SPI, I2C, UART</span>
+          <strong>Industrial</strong><span>OPC-UA, Modbus TCP, PLC environments</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="print" onclick="window.print()">Print / save PDF</button>
+</body>
+</html>
